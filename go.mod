@@ -1,4 +1,4 @@
-module github.com/iwilltry42/confd
+module github.com/rancher/confd
 
 go 1.14
 
