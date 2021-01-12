@@ -7,7 +7,7 @@ steps:
   commands:
   - dapper ci
   volumes:
-    - name: docker
+    - name: socket
       path: /var/run/docker.sock
 
 - name: github_binary_prerelease
