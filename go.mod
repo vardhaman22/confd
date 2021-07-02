@@ -19,6 +19,7 @@ require (
 	github.com/sirupsen/logrus v1.0.6
 	github.com/ugorji/go v1.1.1 // indirect
 	github.com/xordataexchange/crypt v0.0.3-0.20170626215501-b2862e3d0a77
-	golang.org/x/net v0.0.0-20200602114024-627f9648deb9
+	golang.org/x/crypto v0.0.0-20210616213533-5ff15b29337e // indirect
+	golang.org/x/net v0.0.0-20210226172049-e18ecbb05110
 	gopkg.in/yaml.v2 v2.2.2
 )
