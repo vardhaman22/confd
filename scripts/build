@@ -19,5 +19,7 @@ for platform in darwin linux windows; do \
   fi; \
 done
 
+sha256sum bin/* > bin/sha256sum.txt
+
 cd bin/
 ls
