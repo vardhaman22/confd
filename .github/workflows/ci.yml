@@ -1,5 +1,5 @@
 name: Dapper CI on PR and Merge
-run-name: Release ${{ github.ref_name }}
+run-name: CI on Merge to ${{ github.ref_name }}
 
 on:
   pull_request:
@@ -19,12 +19,7 @@ jobs:
         run: |
           apk -U add git
           git config --global --add safe.directory "$GITHUB_WORKSPACE"
-
       - name: Checkout code
         uses: actions/checkout@v4
-      - name: Setup Go
-        uses: actions/setup-go@v5
-        with:
-            go-version-file: go.mod
       - name: build with Dapper
         run: dapper ci
